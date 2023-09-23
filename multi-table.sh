@@ -14,8 +14,7 @@ col=$2
 
 for i in $(seq $row); do
     for j in $(seq $col); do
-		mul=`expr $i \* $j`
-        echo -n "$i*$j=$mul	"
+        echo -n "$i*$j=$(expr $i \* $j)	"
     done
 	echo "" # newline
 done
